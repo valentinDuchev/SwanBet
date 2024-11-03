@@ -1,0 +1,105 @@
+/* src/components/RegisterForm/RegisterForm.module.css */
+
+.registerContainer {
+    background-color: #282828;
+    padding: 40px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+
+    padding-bottom: 100px; /* might be fixed later*/
+}
+
+.heading {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.label {
+    display: block;
+    margin-bottom: 8px;
+    color: #ccc;
+    font-weight: bold;
+}
+
+.input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    background-color: #555555;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1em;
+}
+
+/* Title Selection Styles */
+.titleSelectContainer {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.titleButton {
+    flex: 1;
+    padding: 10px;
+    background-color: #555555;
+    color: #ccc;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.3s, border-color 0.3s;
+}
+
+.titleButton:hover {
+    border-color: #FFE418;
+}
+
+.selected {
+    color: #FFE418;
+    border-color: #FFE418;
+}
+
+/* Register Button Styles */
+.button {
+    width: 100%;
+    padding: 12px;
+    background-color: #282828; /* Same as the div background */
+    color: #FFE418; /* Yellow text color */
+    font-size: 1em;
+    font-weight: bold;
+    border: 2px solid #FFE418; /* Yellow border */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover Effect */
+.button:hover {
+    background-color: #FFE418; /* Yellow background on hover */
+    color: #282828; /* Dark text color on hover */
+}
+
+.linkText {
+    text-align: center;
+    margin-top: 15px;
+    color: #ccc;
+}
+
+.link {
+    color: #FFE418;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    .registerContainer {
+        width: 50%;
+    }
+}

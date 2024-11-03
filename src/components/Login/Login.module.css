@@ -1,0 +1,76 @@
+/* src/components/LoginForm/LoginForm.module.css */
+
+.loginContainer {
+    background-color: #282828;
+    padding: 40px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+}
+
+.heading {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.label {
+    display: block;
+    margin-bottom: 8px;
+    color: #ccc;
+    font-weight: bold;
+}
+
+.input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    background-color: #555555;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1em;
+}
+
+/* Login Button Styles */
+.button {
+    width: 100%;
+    padding: 12px;
+    background-color: #282828; /* Same as the container background */
+    color: #FFE418; /* Yellow text color */
+    font-size: 1em;
+    font-weight: bold;
+    border: 2px solid #FFE418; /* Yellow border */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover Effect */
+.button:hover {
+    background-color: #FFE418; /* Yellow background on hover */
+    color: #282828; /* Dark text color on hover */
+}
+
+.linkText {
+    text-align: center;
+    margin-top: 15px;
+    color: #ccc;
+}
+
+.link {
+    color: #FFE418;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    .loginContainer {
+        width: 50%;
+    }
+}

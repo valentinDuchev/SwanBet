@@ -1,0 +1,170 @@
+/* Reset styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+}
+
+/* Upper Navigation Bar */
+.upper-nav {
+    background-color: #282828; /* Background color for the first line */
+    color: #ddd;
+}
+
+/* Navigation Structure */
+.nav-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+    background-color: #c5c7ca;
+    border-radius: 50%;
+}
+
+.brand-name {
+    font-size: 1.8em; /* Increased font size */
+    font-weight: bold;
+    color: white; /* Color for "Swan" */
+}
+
+.bet {
+    color: #F0DC1B; /* Color for "Bet" */
+}
+
+/* Right Buttons */
+.nav-right {
+    display: flex;
+    gap: 12px;
+}
+
+.sign-btn {
+    background-color: #282828; /* Same as the upper line background */
+    color: #F0DC1B; /* Yellow text color */
+    border: 2px solid #F0DC1B; /* Thicker yellow border */
+    border-radius: 20px; /* More rounded corners */
+    padding: 10px 16px;
+    font-size: 1em;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline from link */
+    transition: background-color 0.3s, transform 0.3s, color 0.3s;
+}
+
+.sign-btn:hover {
+    background-color: #F0DC1B; /* Change background on hover */
+    color: #282828; /* Change text color to upper line color on hover */
+    transform: scale(1.05);
+}
+
+/* Second line of the upper navigation */
+.nav-bottom {
+    background-color: #005440; /* Background color for the second line */
+    display: flex;
+    justify-content: center;
+    gap: 90px; /* Increased gap between buttons */
+    padding: 10px 0;
+}
+
+.nav-link {
+    color: #fff; /* Change text color to white */
+    font-size: 1.2em;
+    text-decoration: none;
+    padding: 8px 0;
+    transition: color 0.3s, font-weight 0.3s;
+    position: relative;
+    font-weight: bold; /* Make text bold */
+}
+
+.nav-link:hover {
+    color: #F0DC1B; /* Change color to yellow on hover */
+}
+
+/* Active link styling */
+.nav-link.active {
+    font-weight: bold;
+    color: #F0DC1B; /* Change text color to yellow when active */
+    border-bottom: 2px solid #F0DC1B; /* Yellow line underneath active link */
+}
+
+/* Bottom Navigation Bar (for phone screens only) */
+.bottom-nav {
+    display: none;
+    position: fixed; /* Fixed to the bottom */
+    bottom: 0; /* Align to the bottom */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    background-color: #555; /* Same color as the bottom nav */
+    padding: 10px 0;
+    justify-content: space-around;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Bottom navigation link styles */
+.bottom-nav-link {
+    color: #c5c7ca;
+    font-size: 1.2em;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.bottom-nav-link span {
+    font-size: 0.7em;
+    margin-top: 5px;
+}
+
+.bottom-nav-link:hover {
+    color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 779px) {
+    /* Hide bottom navigation links on phone screens */
+    .nav-bottom {
+        display: none;
+    }
+
+    /* Show bottom navigation on screens 779px or smaller */
+    .bottom-nav {
+        display: flex;
+    }
+
+    .nav-top {
+        justify-content: space-between; /* Maintain single section */
+        align-items: center; /* Center align items */
+    }
+
+    .brand-name {
+        font-size: 1.6em; /* Slightly smaller on mobile */
+    }
+}
+
+@media (min-width: 900px) {
+    /* Increase gap between buttons on larger screens */
+    .nav-bottom {
+        gap: 90px; /* Wider gap for larger screens */
+    }
+}
+
+/* Add padding to main content to avoid being hidden beneath the bottom nav */
+.main-content {
+    padding-bottom: 60px; /* Adjust according to the height of the bottom navigation */
+}

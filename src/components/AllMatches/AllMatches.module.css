@@ -1,0 +1,168 @@
+/* Reset styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #3E3E3E;
+    /* Overall background set to white */
+}
+
+/* Header Top Buttons */
+.header {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.nav-link {
+    background: none;
+    color: #ddd;
+    font-size: 1.2em;
+    padding: 10px 15px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.active,
+.nav-link:hover {
+    color: #F0DC1B;
+}
+
+.active::after,
+.nav-link:hover::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #F0DC1B;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Matches Box */
+.matches-box {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #282828;
+    /* Background for the matches box */
+    border-radius: 15px;
+    /* Rounded corners */
+}
+
+
+/* Individual Match Styling */
+.match {
+    background-color: #005440;
+    /* Slightly lighter grey for each match div */
+    color: #fff;
+    /* White text color */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 10px;
+    /* Space for the separator below */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* position: relative; */
+
+
+
+    /* IMPORTANT - TO BE DONE IN EACH COMPONENT*/
+
+
+    padding-bottom: 60px;
+    /* Add padding to prevent overlap with bottom nav */
+    overflow-y: auto;
+    /* Allow scrolling if needed */
+
+}
+
+/* League Style */
+.league {
+    /* position: absolute; */
+    top: 10px;
+    left: 10px;
+    font-size: 0.9em;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+/* Teams Style */
+.teams {
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Date and Year Style */
+.date-year {
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Start Time Style */
+.start-time {
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Bet Now Button */
+.bet-btn {
+    background-color: #F0DC1B;
+    color: #282828;
+    border: 2px solid #F0DC1B;
+    border-radius: 20px;
+    padding: 8px 14px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.bet-btn:hover {
+    background-color: #282828;
+    color: #F0DC1B;
+}
+
+/* Separator Style */
+.separator {
+    margin: 10px 0;
+    /* Space around the separator */
+    font-size: 1.5em;
+    /* Size of the dots */
+    color: #F0DC1B;
+    /* Color of the dots */
+    text-align: center;
+    /* Center the dots */
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .main-content {
+        padding: 40px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .matches-box {
+        max-width: 800px;
+    }
+}
