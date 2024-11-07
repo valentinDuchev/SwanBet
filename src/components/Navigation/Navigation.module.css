@@ -73,7 +73,7 @@ body {
 
 /* Second line of the upper navigation */
 .nav-bottom {
-    background-color: #005440; /* Background color for the second line */
+    background-color: #2C1C40; /* Background color for the second line */
     display: flex;
     justify-content: center;
     gap: 90px; /* Increased gap between buttons */
@@ -108,7 +108,7 @@ body {
     bottom: 0; /* Align to the bottom */
     left: 0; /* Align to the left */
     right: 0; /* Align to the right */
-    background-color: #555; /* Same color as the bottom nav */
+    background-color: #2C1C40; /* Same color as the bottom nav */
     padding: 10px 0;
     justify-content: space-around;
     box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);

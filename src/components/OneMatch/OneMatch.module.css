@@ -1,0 +1,357 @@
+/* MatchBetting.module.css */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+/* Main container styling */
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 20px;
+    padding-bottom: 200px;
+}
+
+.matchSection {
+    flex: 1;
+    padding: 20px;
+    background-color: #282828;
+    border-radius: 8px;
+}
+
+/* Match title styling */
+.matchTitle {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.league {
+    font-size: 0.9em;
+    color: #B0B0B0;
+}
+
+.matchTitle h1 {
+    font-size: 2em;
+    color: #FFE418;
+}
+
+.matchInfo {
+    font-size: 0.9em;
+    color: #B0B0B0;
+}
+
+/* 
+
+.bettingOptions {
+    margin: 1rem 0;
+}
+
+.betRow {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+}
+
+.betOption {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.selected {
+    background-color: #007bff; 
+    color: white;
+}
+
+.odds {
+    font-weight: bold;
+}
+
+.halfTimeFullTime {
+    margin-bottom: 1rem; 
+}
+
+.halfTimeFullTime .betRow {
+    flex-direction: column; 
+}
+
+.halfTimeFullTime .betOption {
+    width: 100%; 
+}
+
+@media (max-width: 600px) {
+    .halfTimeFullTime .betOption {
+        width: 100%; 
+    }
+}
+
+/* src/OneMatch.module.css */
+
+/* Half-Time/Full-Time specific styles */
+.halfTimeFullTime {
+    margin-bottom: 1rem; /* Space below this section */
+}
+
+.halfTimeFullTime .betRow {
+    display: flex;            /* Use flexbox */
+    flex-direction: column;  /* Stack items vertically */
+    gap: 10px;               /* Space between items */
+}
+
+.halfTimeFullTime .betOption {
+    width: 100%;             /* Ensure each option takes full width */
+    padding: 10px;          /* Add padding for better clickability */
+    border: 1px solid #ccc; /* Optional border for visibility */
+    border-radius: 5px;     /* Rounded corners */
+    text-align: center;      /* Center text */
+    cursor: pointer;         /* Cursor pointer on hover */
+    transition: background-color 0.3s; /* Smooth background color change */
+}
+
+/* Highlight selected bets */
+.halfTimeFullTime .selected {
+    background-color: #007bff; /* Highlight color for selected bets */
+    color: white;              /* Text color for selected bets */
+}
+
+
+
+
+/* Bet rows and options */
+.bettingOptions h2 {
+    font-size: 1.3em;
+    color: #FFE418;
+    margin-bottom: 10px;
+}
+
+.betRow {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.betOption {
+    background-color: #555555;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    flex: 1;
+    cursor: pointer;
+    transition: border 0.3s;
+}
+
+.betOptionCorrectScore {
+    background-color: #555555;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    flex: 1;
+    cursor: pointer;
+    transition: border 0.3s;
+    
+}
+
+.betOption.selected {
+    border: 2px solid #FFE418;
+}
+
+.odds {
+    color: #FFE418;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+/* Correct Score grid */
+.correctScoreGrid {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.scoreColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Bet slip styling */
+.betSlip {
+    background-color: #282828;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+}
+
+.selectedBet {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.totalOdds {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.placeBetButton {
+    background-color: #FFE418;
+    color: #282828;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+}
+
+/* Mobile responsive styling */
+
+
+/* Mobile responsive styling */
+@media (max-width: 779px) {
+    /* Stack layout on mobile */
+    .container {
+        flex-direction: column;
+    }
+
+    /* Hide bet slip initially */
+    .betSlip {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: none;
+        z-index: 10;
+        border-radius: 8px 8px 0 0;
+    }
+
+    /* Display bet slip by default for demonstration */
+    .betSlip.mobile-visible {
+        display: block;
+    }
+
+    .mobileBetSlipButton {
+        position: fixed;
+        bottom: 70px; /* Floating with 100px bottom-padding */
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #FFE418;
+        color: #282828;
+        padding: 20px; /* Increased padding for better aesthetics */
+        border-radius: 5px;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+        z-index: 10;
+        width: 300%; /* Make it 3 times wider */
+        height: 60px; /* Adjusted height to make it twice as tall */
+    }
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
+    justify-content: center;
+    align-items: center;
+}
+
+.modalContent {
+    background-color: #282828;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #FFE418;
+    border-radius: 8px;
+    width: 80%; /* Width of the modal */
+    max-width: 500px; /* Max width for larger screens */
+    color: white; /* Text color */
+}
+
+.modal.visible {
+    display: flex; /* Show the modal */
+}
+
+/* Button to open Bet Slip */
+.mobileBetSlipButton {
+    position: fixed;
+    bottom: 100px; /* Float above the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px 40px; /* Increased padding for a better look */
+    background-color: #FFE418; /* Button background */
+    color: #282828; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 99; /* Above other elements */
+}
+
+/* Style for the close button in the modal */
+.closeButton {
+    background-color: #FF4C4C; /* Close button background */
+    color: white; /* Close button text color */
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Fix for the bet slip on wider screens */
+/* .betSlip {
+    position: fixed; 
+    right: 20px; 
+    top: 20px; 
+    width: 300px; 
+    background-color: #FFFFFF; 
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+} */
+
+/* Style for the selected bets */
+.selectedBet {
+    margin: 10px 0;
+}
+
+/* Hide mobile bet slip button on wider screens */
+@media (min-width: 780px) {
+    .mobileBetSlipButton {
+        display: none; /* Hide the button when screen width is greater than 779px */
+    }
+
+    
+}
+
+.bet-option.selected {
+    border: 2px solid #FFE418; /* Highlight the selected bet */
+    background-color: #444444; /* Change background for better visibility */
+}
+
+
+/* Adjust bet slip visibility */
+
+

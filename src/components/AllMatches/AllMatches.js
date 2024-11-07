@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './AllMatches.module.css';
+import { Link } from 'react-router-dom';
 
 const MatchesPage = () => {
   return (
@@ -18,7 +19,7 @@ const MatchesPage = () => {
             <div className={styles.teams}>CSKA vs Levski</div>
             <div className={styles['date-year']}>03 Nov 2024</div>
             <div className={styles['start-time']}>18:00</div>
-            <button className={styles['bet-btn']}>Bet Now</button>
+            <Link to='/OneMatch'className={styles['bet-btn']}>Bet Now</Link>
             <span>Bets closing in 17.50</span>
           </div>
           <div className={styles.separator}>...</div>
