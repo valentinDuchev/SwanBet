@@ -30,6 +30,8 @@ const OneMatch = () => {
     const [matchDetails, setMatchDetails] = useState({})
     const [matchOdds, setMatchOdds] = useState([])
 
+    console.log('yes')
+
 
     const toggleBetSlip = () => {
         setBetSlipVisible(!isBetSlipVisible);
