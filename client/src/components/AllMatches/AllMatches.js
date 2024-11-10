@@ -1,8 +1,25 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './AllMatches.module.css';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
+import axios from 'axios';
 
 const MatchesPage = () => {
+
+  const [matches, setMatches] = useState([])
+
+  const { id } = useParams()
+
+  useEffect(() => {
+    axios
+      .get(`http://localhost:3030/api/legs/${id}`)
+      .then(res => {
+        console.log(res)
+        setMatches([...matches, res.data.data.matches])
+      })
+  }, [])
+
+  console.log(matches)
+
   return (
     <div>
       {/* Top Buttons */}
@@ -13,13 +30,26 @@ const MatchesPage = () => {
 
       {/* Main Content */}
       <main className={styles['main-content']}>
+
         <div className={styles['matches-box']}>
+          {matches[0] ? matches[0].map((match) =>
+            <div className={styles.match}>
+              <div className={styles.league}>{match.league}</div>
+              <div className={styles.teams}>{match.name}</div>
+              <div className={styles['date-year']}>{match.date}</div>
+              <div className={styles['start-time']}>18:00</div>
+              <Link to={`/OneMatch/${id}/${match._id}`} className={styles['bet-btn']}>Bet Now</Link>
+              <span>Bets closing in 17.50</span>
+            </div>
+          ) : ''}
+        </div>
+        {/* <div className={styles['matches-box']}>
           <div className={styles.match}>
             <div className={styles.league}>Premier League</div>
             <div className={styles.teams}>CSKA vs Levski</div>
             <div className={styles['date-year']}>03 Nov 2024</div>
             <div className={styles['start-time']}>18:00</div>
-            <Link to='/OneMatch'className={styles['bet-btn']}>Bet Now</Link>
+            <Link to='/OneMatch' className={styles['bet-btn']}>Bet Now</Link>
             <span>Bets closing in 17.50</span>
           </div>
           <div className={styles.separator}>...</div>
@@ -59,7 +89,7 @@ const MatchesPage = () => {
             <button className={styles['bet-btn']}>Bet Now</button>
           </div>
           <div className={styles.separator}>...</div>
-        </div>
+        </div> */}
       </main>
     </div>
   );

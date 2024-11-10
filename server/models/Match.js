@@ -5,7 +5,8 @@ const mongoose = require('mongoose');
 // Define the sub-schema for individual odds items (e.g., a single bet option)
 const oddsItemSchema = new mongoose.Schema({
     type: { type: String, required: true },  // Type of bet, e.g., "Cska", "Draw"
-    odds: { type: String, required: true },   // The odds value
+    odds: { type: String, required: true }, 
+    betId: {type: Number, required: true},  // The odds value
     isTrue: { type: Boolean, default: false } // Whether this outcome is true
 }, { _id: false }); // Avoid creating _id for each odds item
 
@@ -62,7 +63,7 @@ const matchSchema = new mongoose.Schema({
         firstScore: firstScoreSchema, 
         bttsOver: bttsOverSchema
     }
-}, { _id: false }); // No _id for matches if they are subdocuments of Leg
+}, ); // No _id for matches if they are subdocuments of Leg
 
 // Define the Leg schema, which contains an array of grouped matches
 const legSchema = new mongoose.Schema({

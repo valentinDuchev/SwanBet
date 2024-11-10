@@ -7,6 +7,9 @@ import BetSlipLargeScreen from './utils/BetSlipLargeScreen';
 
 import { cannotCombineHelper } from './utils/cannotCombineHelper';
 import { sameCombinedHelper } from './utils/sameCombinedHelper';
+import axios from 'axios';
+import { useParams } from 'react-router-dom';
+import { BetConvertor } from './utils/BetConvertor';
 
 const OneMatch = () => {
     const [isBetSlipVisible, setBetSlipVisible] = useState(false);
@@ -24,6 +27,8 @@ const OneMatch = () => {
         bttsOver: 0,
     })
     const [blockPlaceBet, setBlockPlaceBet] = useState(false)
+    const [matchDetails, setMatchDetails] = useState({})
+    const [matchOdds, setMatchOdds] = useState([])
 
 
     const toggleBetSlip = () => {
@@ -39,8 +44,33 @@ const OneMatch = () => {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
+    const { legId, matchId } = useParams()
+
+
+    useEffect(() => {
+        axios
+            .get(`http://localhost:3030/api/legs/${legId}/${matchId}`)
+            .then(res => {
+                console.log(res)
+                setMatchDetails(res.data.data)
+                const newBet = BetConvertor(res.data.data.odds)
+                console.log(newBet)
+                setMatchOdds(...matchOdds, newBet)
+
+                console.log(matchOdds)
+            })
+    }, [])
+
+    
+
+
+
     const handleBetSelection = (bet) => {
         const isBetSelected = selectedBets.find(selectedBet => selectedBet.id === bet.id);
+
+        console.log(bet
+            
+        )
 
         if (isBetSelected) {
             setSelectedBets(selectedBets.filter(selectedBet => selectedBet.id !== bet.id));
@@ -165,6 +195,8 @@ const OneMatch = () => {
                     setBlockPlaceBet(true)
                 }
             }
+
+            console.log(selectedBets)
 
         } else {
             setSelectedBets([...selectedBets, bet]);
@@ -294,7 +326,7 @@ const OneMatch = () => {
 
     const removeBet = (itemToRemove) => {
         setSelectedBets((prevItems) => {
-            
+
             if (itemToRemove.id >= 4 && itemToRemove.id <= 5) {
                 if (betsIds.goals > 0) {
                     setBetsIds(betsIds, betsIds.goals--)
@@ -527,44 +559,40 @@ const OneMatch = () => {
             {/* Match Info */}
             <div className={styles.matchSection}>
                 <div className={styles.matchTitle}>
-                    <p className={styles.league}>efbet League</p>
-                    <h1>CSKA vs Levski</h1>
-                    <p className={styles.matchInfo}>Date: November 12, 2024 - 18:00</p>
+                    <p className={styles.league}>{matchDetails.league}</p>
+                    <h1>{matchDetails.name}</h1>
+                    <p className={styles.matchInfo}>{matchDetails.date}</p>
                 </div>
 
                 {/* Betting Options */}
                 <div className={styles.bettingOptions}>
-                    {betOptions.map(section => (
+                    {matchOdds ? matchOdds.map((section) => (
                         <div key={section.title}>
                             <h2>{section.title}</h2>
                             <div className={styles.betRow}>
+
                                 {section.options.map(option => (
-                                    (option.id < 8 || option.id > 19) ?
                                         <div
                                             key={option.id}
-
-                                            className={`${styles.betOption} ${selectedBets.some(bet => bet.id === option.id) ? styles.selected : ''}`}
+                                            
+                                            className={`${styles.betOption} ${selectedBets.some(thisBet => Number(thisBet.id) === Number(option.id)) ? styles.selected : ''}`}
                                             onClick={() => handleBetSelection(option)}
                                         >
-                                            {option.name} <span className={styles.odds}>{option.odds.toFixed(2)}</span>
+                                            {option.name} <span className={styles.odds}>{Number(option.odds).toFixed(2)}</span>
                                         </div>
-                                        : <div
-                                            key={option.id}
-
-                                            className={`${styles.betOptionCorrectScore} ${selectedBets.some(bet => bet.id === option.id) ? styles.selected : ''}`}
-                                            onClick={() => handleBetSelection(option)}
-                                        >
-                                            {option.name} <span className={styles.odds}>{option.odds.toFixed(2)}</span>
-                                        </div>
+                                        
                                 ))}
+
+
                             </div>
 
 
                         </div>
-                    ))}
+                    )) : ''}
 
 
                 </div>
+
             </div>
 
             {/* Button to open Bet Slip on Mobile */}
@@ -574,7 +602,7 @@ const OneMatch = () => {
                 </button>
             )}
 
-            
+
 
             <div>
                 {/* Other content here */}
@@ -591,13 +619,13 @@ const OneMatch = () => {
             {/* Always Visible Bet Slip on Larger Screens */}
             {isLargeScreen && (
                 <div>
-                {/* Other content here */}
-                <BetSlipLargeScreen 
-                    selectedBets={selectedBets}
-                    removeBet={removeBet}
-                    blockPlaceBet={blockPlaceBet}
-                />
-            </div>
+                    {/* Other content here */}
+                    <BetSlipLargeScreen
+                        selectedBets={selectedBets}
+                        removeBet={removeBet}
+                        blockPlaceBet={blockPlaceBet}
+                    />
+                </div>
             )}
         </div>
     );
@@ -611,8 +639,8 @@ OneMatch.propTypes = {
 export default OneMatch;
 
 
-{/* BetSlip Mddal - Only visible when on phone screen size */}
-            {/* <div className={`${styles.modal} ${isBetSlipVisible ? styles.visible : ''}`} onClose={toggleBetSlip} selectedBets={selectedBets}>
+{/* BetSlip Mddal - Only visible when on phone screen size */ }
+{/* <div className={`${styles.modal} ${isBetSlipVisible ? styles.visible : ''}`} onClose={toggleBetSlip} selectedBets={selectedBets}>
                 <div className={styles.modalContent}>
                     <h2>Your Bet Slip</h2>
                     {selectedBets.length > 0 ? (

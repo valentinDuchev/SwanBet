@@ -154,7 +154,7 @@ body {
     transition: border 0.3s;
 }
 
-.betOptionCorrectScore {
+/* .betOptionCorrectScore {
     background-color: #555555;
     padding: 10px;
     border-radius: 5px;
@@ -163,7 +163,7 @@ body {
     cursor: pointer;
     transition: border 0.3s;
     
-}
+} */
 
 .betOption.selected {
     border: 2px solid #FFE418;

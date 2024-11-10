@@ -1,0 +1,982 @@
+{
+    "name": "Leg 1",
+    "matches": [
+        {
+            "name": "Cska vs Levski",
+            "date": "12.08.2024",
+            "league": "efbet league",
+            "odds": {
+                "endResult": {
+                    "items": [
+                        {
+                            "type": "Cska",
+                            "odds": "2.20",
+                            "isTrue": false,
+                            "betId": 1
+                        },
+                        {
+                            "type": "Draw",
+                            "odds": "3.40",
+                            "isTrue": false,
+                            "betId": 2
+                        },
+                        {
+                            "type": "Levski",
+                            "odds": "4.50",
+                            "isTrue": false,
+                            "betId": 3
+                        }
+                    ]
+                },
+                "btts": {
+                    "items": [
+                        {
+                            "type": "Yes",
+                            "odds": "1.80",
+                            "isTrue": false,
+                            "betId": 4
+                        },
+                        {
+                            "type": "No",
+                            "odds": "1.90",
+                            "isTrue": false,
+                            "betId": 5
+                        }
+                    ]
+                },
+                "goals": {
+                    "items": [
+                        {
+                            "type": "Over 2.5",
+                            "odds": "1.80",
+                            "isTrue": false,
+                            "betId": 6
+                        },
+                        {
+                            "type": "Under 2.5",
+                            "odds": "1.90",
+                            "isTrue": false,
+                            "betId": 7
+                        }
+                    ]
+                },
+                "corners": {
+                    "items": [
+                        {
+                            "type": "Over 9.5",
+                            "odds": "1.80",
+                            "isTrue": false,
+                            "betId": 8
+                        },
+                        {
+                            "type": "Under 9.5",
+                            "odds": "1.90",
+                            "isTrue": false,
+                            "betId": 9
+                        }
+                    ]
+                },
+                "doubleChance": {
+                    "items": [
+                        {
+                            "type": "Cska or Draw",
+                            "odds": "1.60",
+                            "isTrue": false,
+                            "betId": 10
+                        },
+                        {
+                            "type": "Levski or Draw",
+                            "odds": "1.70",
+                            "isTrue": false,
+                            "betId": 11
+                        }
+                    ]
+                },
+                "correctScore": {
+                    "items": [
+                        {
+                            "type": "1-0",
+                            "odds": "7.50",
+                            "isTrue": false,
+                            "betId": 12
+                        },
+                        {
+                            "type": "2-1",
+                            "odds": "10.00",
+                            "isTrue": false,
+                            "betId": 13
+                        },
+                        {
+                            "type": "2-0",
+                            "odds": "10.00",
+                            "isTrue": false,
+                            "betId": 14
+                        },
+                        {
+                            "type": "3-1",
+                            "odds": "10.00",
+                            "isTrue": false,
+                            "betId": 15
+                        },
+                        {
+                            "type": "0-0",
+                            "odds": "10.00",
+                            "isTrue": false,
+                            "betId": 16
+                        },
+                        {
+                            "type": "1-1",
+                            "odds": "10.00",
+                            "isTrue": false,
+                            "betId": 17
+                        },
+                        {
+                            "type": "2-2",
+                            "odds": "10.00",
+                            "isTrue": false,
+                            "betId": 18
+                        },
+                        {
+                            "type": "other",
+                            "odds": "10.00",
+                            "isTrue": false,
+                            "betId": 19
+                        }
+                    ]
+                },
+                "htft": {
+                    "items": [
+                        {
+                            "type": "Cska/Cska",
+                            "odds": "3.50",
+                            "isTrue": false, 
+                            "betId": 20
+                        },
+                        {
+                            "type": "Draw/Levski",
+                            "odds": "4.50",
+                            "isTrue": false, 
+                            "betId": 21
+                        }
+                    ]
+                },
+                "firstScore": {
+                    "items": [
+                        {
+                            "type": "Cska",
+                            "odds": "2.10",
+                            "isTrue": false, 
+                            "betId": 22
+                        },
+                        {
+                            "type": "Levski",
+                            "odds": "2.50",
+                            "isTrue": false, 
+                            "betId": 23
+                        }
+                    ]
+                },
+                "bttsOver": {
+                    "items": [
+                        {
+                            "type": "Yes and Over 2.5",
+                            "odds": "2.20",
+                            "isTrue": false, 
+                            "betId": 24
+                        },
+                        {
+                            "type": "No and Under 2.5",
+                            "odds": "3.10",
+                            "isTrue": false, 
+                            "betId": 25
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Cska vs Levski",
+            "date": "12.08.2024",
+            "league": "efbet league",
+            "odds": {
+                "endResult": {
+                    "items": [
+                        {
+                            "type": "Cska",
+                            "odds": "2.20",
+                            "isTrue": false,
+                            "betId": 1
+                        },
+                        {
+                            "type": "Draw",
+                            "odds": "3.40",
+                            "isTrue": false,
+                            "betId": 2
+                        },
+                        {
+                            "type": "Levski",
+                            "odds": "4.50",
+                            "isTrue": false,
+                            "betId": 3
+                        }
+                    ]
+                },
+                "btts": {
+                    "items": [
+                        {
+                            "type": "Yes",
+                            "odds": "1.80",
+                            "isTrue": false,
+                            "betId": 4
+                        },
+                        {
+                            "type": "No",
+                            "odds": "1.90",
+                            "isTrue": false,
+                            "betId": 5
+                        }
+                    ]
+                },
+                "goals": {
+                    "items": [
+                        {
+                            "type": "Over 2.5",
+                            "odds": "1.80",
+                            "isTrue": false,
+                            "betId": 6
+                        },
+                        {
+                            "type": "Under 2.5",
+                            "odds": "1.90",
+                            "isTrue": false,
+                            "betId": 7
+                        }
+                    ]
+                },
+                "corners": {
+                    "items": [
+                        {
+                            "type": "Over 9.5",
+                            "odds": "1.80",
+                            "isTrue": false,
+                            "betId": 8
+                        },
+                        {
+                            "type": "Under 9.5",
+                            "odds": "1.90",
+                            "isTrue": false,
+                            "betId": 9
+                        }
+                    ]
+                },
+                "doubleChance": {
+                    "items": [
+                        {
+                            "type": "Cska or Draw",
+                            "odds": "1.60",
+                            "isTrue": false,
+                            "betId": 10
+                        },
+                        {
+                            "type": "Levski or Draw",
+                            "odds": "1.70",
+                            "isTrue": false,
+                            "betId": 11
+                        }
+                    ]
+                },
+                "correctScore": {
+                    "items": [
+                        {
+                            "type": "1-0",
+                            "odds": "7.50",
+                            "isTrue": false,
+                            "betId": 12
+                        },
+                        {
+                            "type": "2-1",
+                            "odds": "10.00",
+                            "isTrue": false,
+                            "betId": 13
+                        },
+                        {
+                            "type": "2-0",
+                            "odds": "10.00",
+                            "isTrue": false,
+                            "betId": 14
+                        },
+                        {
+                            "type": "3-1",
+                            "odds": "10.00",
+                            "isTrue": false,
+                            "betId": 15
+                        },
+                        {
+                            "type": "0-0",
+                            "odds": "10.00",
+                            "isTrue": false,
+                            "betId": 16
+                        },
+                        {
+                            "type": "1-1",
+                            "odds": "10.00",
+                            "isTrue": false,
+                            "betId": 17
+                        },
+                        {
+                            "type": "2-2",
+                            "odds": "10.00",
+                            "isTrue": false,
+                            "betId": 18
+                        },
+                        {
+                            "type": "other",
+                            "odds": "10.00",
+                            "isTrue": false,
+                            "betId": 19
+                        }
+                    ]
+                },
+                "htft": {
+                    "items": [
+                        {
+                            "type": "Cska/Cska",
+                            "odds": "3.50",
+                            "isTrue": false, 
+                            "betId": 20
+                        },
+                        {
+                            "type": "Draw/Levski",
+                            "odds": "4.50",
+                            "isTrue": false, 
+                            "betId": 21
+                        }
+                    ]
+                },
+                "firstScore": {
+                    "items": [
+                        {
+                            "type": "Cska",
+                            "odds": "2.10",
+                            "isTrue": false, 
+                            "betId": 22
+                        },
+                        {
+                            "type": "Levski",
+                            "odds": "2.50",
+                            "isTrue": false, 
+                            "betId": 23
+                        }
+                    ]
+                },
+                "bttsOver": {
+                    "items": [
+                        {
+                            "type": "Yes and Over 2.5",
+                            "odds": "2.20",
+                            "isTrue": false, 
+                            "betId": 24
+                        },
+                        {
+                            "type": "No and Under 2.5",
+                            "odds": "3.10",
+                            "isTrue": false, 
+                            "betId": 25
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Cska vs Levski",
+            "date": "12.08.2024",
+            "league": "efbet league",
+            "odds": {
+                "endResult": {
+                    "items": [
+                        {
+                            "type": "Cska",
+                            "odds": "2.20",
+                            "isTrue": false,
+                            "betId": 1
+                        },
+                        {
+                            "type": "Draw",
+                            "odds": "3.40",
+                            "isTrue": false,
+                            "betId": 2
+                        },
+                        {
+                            "type": "Levski",
+                            "odds": "4.50",
+                            "isTrue": false,
+                            "betId": 3
+                        }
+                    ]
+                },
+                "btts": {
+                    "items": [
+                        {
+                            "type": "Yes",
+                            "odds": "1.80",
+                            "isTrue": false,
+                            "betId": 4
+                        },
+                        {
+                            "type": "No",
+                            "odds": "1.90",
+                            "isTrue": false,
+                            "betId": 5
+                        }
+                    ]
+                },
+                "goals": {
+                    "items": [
+                        {
+                            "type": "Over 2.5",
+                            "odds": "1.80",
+                            "isTrue": false,
+                            "betId": 6
+                        },
+                        {
+                            "type": "Under 2.5",
+                            "odds": "1.90",
+                            "isTrue": false,
+                            "betId": 7
+                        }
+                    ]
+                },
+                "corners": {
+                    "items": [
+                        {
+                            "type": "Over 9.5",
+                            "odds": "1.80",
+                            "isTrue": false,
+                            "betId": 8
+                        },
+                        {
+                            "type": "Under 9.5",
+                            "odds": "1.90",
+                            "isTrue": false,
+                            "betId": 9
+                        }
+                    ]
+                },
+                "doubleChance": {
+                    "items": [
+                        {
+                            "type": "Cska or Draw",
+                            "odds": "1.60",
+                            "isTrue": false,
+                            "betId": 10
+                        },
+                        {
+                            "type": "Levski or Draw",
+                            "odds": "1.70",
+                            "isTrue": false,
+                            "betId": 11
+                        }
+                    ]
+                },
+                "correctScore": {
+                    "items": [
+                        {
+                            "type": "1-0",
+                            "odds": "7.50",
+                            "isTrue": false,
+                            "betId": 12
+                        },
+                        {
+                            "type": "2-1",
+                            "odds": "10.00",
+                            "isTrue": false,
+                            "betId": 13
+                        },
+                        {
+                            "type": "2-0",
+                            "odds": "10.00",
+                            "isTrue": false,
+                            "betId": 14
+                        },
+                        {
+                            "type": "3-1",
+                            "odds": "10.00",
+                            "isTrue": false,
+                            "betId": 15
+                        },
+                        {
+                            "type": "0-0",
+                            "odds": "10.00",
+                            "isTrue": false,
+                            "betId": 16
+                        },
+                        {
+                            "type": "1-1",
+                            "odds": "10.00",
+                            "isTrue": false,
+                            "betId": 17
+                        },
+                        {
+                            "type": "2-2",
+                            "odds": "10.00",
+                            "isTrue": false,
+                            "betId": 18
+                        },
+                        {
+                            "type": "other",
+                            "odds": "10.00",
+                            "isTrue": false,
+                            "betId": 19
+                        }
+                    ]
+                },
+                "htft": {
+                    "items": [
+                        {
+                            "type": "Cska/Cska",
+                            "odds": "3.50",
+                            "isTrue": false, 
+                            "betId": 20
+                        },
+                        {
+                            "type": "Draw/Levski",
+                            "odds": "4.50",
+                            "isTrue": false, 
+                            "betId": 21
+                        }
+                    ]
+                },
+                "firstScore": {
+                    "items": [
+                        {
+                            "type": "Cska",
+                            "odds": "2.10",
+                            "isTrue": false, 
+                            "betId": 22
+                        },
+                        {
+                            "type": "Levski",
+                            "odds": "2.50",
+                            "isTrue": false, 
+                            "betId": 23
+                        }
+                    ]
+                },
+                "bttsOver": {
+                    "items": [
+                        {
+                            "type": "Yes and Over 2.5",
+                            "odds": "2.20",
+                            "isTrue": false, 
+                            "betId": 24
+                        },
+                        {
+                            "type": "No and Under 2.5",
+                            "odds": "3.10",
+                            "isTrue": false, 
+                            "betId": 25
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Cska vs Levski",
+            "date": "12.08.2024",
+            "league": "efbet league",
+            "odds": {
+                "endResult": {
+                    "items": [
+                        {
+                            "type": "Cska",
+                            "odds": "2.20",
+                            "isTrue": false,
+                            "betId": 1
+                        },
+                        {
+                            "type": "Draw",
+                            "odds": "3.40",
+                            "isTrue": false,
+                            "betId": 2
+                        },
+                        {
+                            "type": "Levski",
+                            "odds": "4.50",
+                            "isTrue": false,
+                            "betId": 3
+                        }
+                    ]
+                },
+                "btts": {
+                    "items": [
+                        {
+                            "type": "Yes",
+                            "odds": "1.80",
+                            "isTrue": false,
+                            "betId": 4
+                        },
+                        {
+                            "type": "No",
+                            "odds": "1.90",
+                            "isTrue": false,
+                            "betId": 5
+                        }
+                    ]
+                },
+                "goals": {
+                    "items": [
+                        {
+                            "type": "Over 2.5",
+                            "odds": "1.80",
+                            "isTrue": false,
+                            "betId": 6
+                        },
+                        {
+                            "type": "Under 2.5",
+                            "odds": "1.90",
+                            "isTrue": false,
+                            "betId": 7
+                        }
+                    ]
+                },
+                "corners": {
+                    "items": [
+                        {
+                            "type": "Over 9.5",
+                            "odds": "1.80",
+                            "isTrue": false,
+                            "betId": 8
+                        },
+                        {
+                            "type": "Under 9.5",
+                            "odds": "1.90",
+                            "isTrue": false,
+                            "betId": 9
+                        }
+                    ]
+                },
+                "doubleChance": {
+                    "items": [
+                        {
+                            "type": "Cska or Draw",
+                            "odds": "1.60",
+                            "isTrue": false,
+                            "betId": 10
+                        },
+                        {
+                            "type": "Levski or Draw",
+                            "odds": "1.70",
+                            "isTrue": false,
+                            "betId": 11
+                        }
+                    ]
+                },
+                "correctScore": {
+                    "items": [
+                        {
+                            "type": "1-0",
+                            "odds": "7.50",
+                            "isTrue": false,
+                            "betId": 12
+                        },
+                        {
+                            "type": "2-1",
+                            "odds": "10.00",
+                            "isTrue": false,
+                            "betId": 13
+                        },
+                        {
+                            "type": "2-0",
+                            "odds": "10.00",
+                            "isTrue": false,
+                            "betId": 14
+                        },
+                        {
+                            "type": "3-1",
+                            "odds": "10.00",
+                            "isTrue": false,
+                            "betId": 15
+                        },
+                        {
+                            "type": "0-0",
+                            "odds": "10.00",
+                            "isTrue": false,
+                            "betId": 16
+                        },
+                        {
+                            "type": "1-1",
+                            "odds": "10.00",
+                            "isTrue": false,
+                            "betId": 17
+                        },
+                        {
+                            "type": "2-2",
+                            "odds": "10.00",
+                            "isTrue": false,
+                            "betId": 18
+                        },
+                        {
+                            "type": "other",
+                            "odds": "10.00",
+                            "isTrue": false,
+                            "betId": 19
+                        }
+                    ]
+                },
+                "htft": {
+                    "items": [
+                        {
+                            "type": "Cska/Cska",
+                            "odds": "3.50",
+                            "isTrue": false, 
+                            "betId": 20
+                        },
+                        {
+                            "type": "Draw/Levski",
+                            "odds": "4.50",
+                            "isTrue": false, 
+                            "betId": 21
+                        }
+                    ]
+                },
+                "firstScore": {
+                    "items": [
+                        {
+                            "type": "Cska",
+                            "odds": "2.10",
+                            "isTrue": false, 
+                            "betId": 22
+                        },
+                        {
+                            "type": "Levski",
+                            "odds": "2.50",
+                            "isTrue": false, 
+                            "betId": 23
+                        }
+                    ]
+                },
+                "bttsOver": {
+                    "items": [
+                        {
+                            "type": "Yes and Over 2.5",
+                            "odds": "2.20",
+                            "isTrue": false, 
+                            "betId": 24
+                        },
+                        {
+                            "type": "No and Under 2.5",
+                            "odds": "3.10",
+                            "isTrue": false, 
+                            "betId": 25
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Cska vs Levski",
+            "date": "12.08.2024",
+            "league": "efbet league",
+            "odds": {
+                "endResult": {
+                    "items": [
+                        {
+                            "type": "Cska",
+                            "odds": "2.20",
+                            "isTrue": false,
+                            "betId": 1
+                        },
+                        {
+                            "type": "Draw",
+                            "odds": "3.40",
+                            "isTrue": false,
+                            "betId": 2
+                        },
+                        {
+                            "type": "Levski",
+                            "odds": "4.50",
+                            "isTrue": false,
+                            "betId": 3
+                        }
+                    ]
+                },
+                "btts": {
+                    "items": [
+                        {
+                            "type": "Yes",
+                            "odds": "1.80",
+                            "isTrue": false,
+                            "betId": 4
+                        },
+                        {
+                            "type": "No",
+                            "odds": "1.90",
+                            "isTrue": false,
+                            "betId": 5
+                        }
+                    ]
+                },
+                "goals": {
+                    "items": [
+                        {
+                            "type": "Over 2.5",
+                            "odds": "1.80",
+                            "isTrue": false,
+                            "betId": 6
+                        },
+                        {
+                            "type": "Under 2.5",
+                            "odds": "1.90",
+                            "isTrue": false,
+                            "betId": 7
+                        }
+                    ]
+                },
+                "corners": {
+                    "items": [
+                        {
+                            "type": "Over 9.5",
+                            "odds": "1.80",
+                            "isTrue": false,
+                            "betId": 8
+                        },
+                        {
+                            "type": "Under 9.5",
+                            "odds": "1.90",
+                            "isTrue": false,
+                            "betId": 9
+                        }
+                    ]
+                },
+                "doubleChance": {
+                    "items": [
+                        {
+                            "type": "Cska or Draw",
+                            "odds": "1.60",
+                            "isTrue": false,
+                            "betId": 10
+                        },
+                        {
+                            "type": "Levski or Draw",
+                            "odds": "1.70",
+                            "isTrue": false,
+                            "betId": 11
+                        }
+                    ]
+                },
+                "correctScore": {
+                    "items": [
+                        {
+                            "type": "1-0",
+                            "odds": "7.50",
+                            "isTrue": false,
+                            "betId": 12
+                        },
+                        {
+                            "type": "2-1",
+                            "odds": "10.00",
+                            "isTrue": false,
+                            "betId": 13
+                        },
+                        {
+                            "type": "2-0",
+                            "odds": "10.00",
+                            "isTrue": false,
+                            "betId": 14
+                        },
+                        {
+                            "type": "3-1",
+                            "odds": "10.00",
+                            "isTrue": false,
+                            "betId": 15
+                        },
+                        {
+                            "type": "0-0",
+                            "odds": "10.00",
+                            "isTrue": false,
+                            "betId": 16
+                        },
+                        {
+                            "type": "1-1",
+                            "odds": "10.00",
+                            "isTrue": false,
+                            "betId": 17
+                        },
+                        {
+                            "type": "2-2",
+                            "odds": "10.00",
+                            "isTrue": false,
+                            "betId": 18
+                        },
+                        {
+                            "type": "other",
+                            "odds": "10.00",
+                            "isTrue": false,
+                            "betId": 19
+                        }
+                    ]
+                },
+                "htft": {
+                    "items": [
+                        {
+                            "type": "Cska/Cska",
+                            "odds": "3.50",
+                            "isTrue": false, 
+                            "betId": 20
+                        },
+                        {
+                            "type": "Draw/Levski",
+                            "odds": "4.50",
+                            "isTrue": false, 
+                            "betId": 21
+                        }
+                    ]
+                },
+                "firstScore": {
+                    "items": [
+                        {
+                            "type": "Cska",
+                            "odds": "2.10",
+                            "isTrue": false, 
+                            "betId": 22
+                        },
+                        {
+                            "type": "Levski",
+                            "odds": "2.50",
+                            "isTrue": false, 
+                            "betId": 23
+                        }
+                    ]
+                },
+                "bttsOver": {
+                    "items": [
+                        {
+                            "type": "Yes and Over 2.5",
+                            "odds": "2.20",
+                            "isTrue": false, 
+                            "betId": 24
+                        },
+                        {
+                            "type": "No and Under 2.5",
+                            "odds": "3.10",
+                            "isTrue": false, 
+                            "betId": 25
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
+
+
+{
+    "firstName": "Pesho ",
+    "lastName": "Goshev",
+    "password": "cska19488",
+    "rePass": "cska19488",
+    "email": "pesho@abv.bgt",
+    "dateCreated": "13/12/2001",
+    "phone": "0899921106",
+    "username": "pesho"
+}

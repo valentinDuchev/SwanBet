@@ -34,12 +34,34 @@ async function createLeg(reqData) {
     return leg;
 }
 
-async function getAllLegs () {
-    const result = await Leg.find ({});
+async function getAllLegs() {
+    const result = await Leg.find({});
     return result
 }
 
+async function getOneLeg(_id) {
+    const result = await Leg.findOne({ _id })
+    return result;
+}
+
+async function getOneMatch(legId, matchId) {
+    const leg = await Leg.findOne({ _id: legId });
+
+    const match = leg.matches.find(match => match._id.toString() === matchId);
+
+    if (!match) {
+        throw new Error("Match not found");
+    }
+
+    return match;
+}
+
+
+
+// todo - getoneleg, getonematch from a leg, updatelegbyid, updatematchbyid
 module.exports = {
     createLeg,
-    getAllLegs
+    getAllLegs,
+    getOneLeg, 
+    getOneMatch
 };

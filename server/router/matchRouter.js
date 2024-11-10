@@ -1,5 +1,5 @@
 const express = require('express');
-const { createLeg, getAllLegs } = require('../controllers/matchController');
+const { createLeg, getAllLegs, getOneLeg, getOneMatch } = require('../controllers/matchController');
 const router = express.Router();
 
 router.post('/legs', async (req, res) => {
@@ -39,6 +39,25 @@ router.post('/legs', async (req, res) => {
 router.get('/legs', async (req, res) => {
     const result = await getAllLegs()
     res.status(200).json({ result, message: 'success' })
+})
+
+router.get('/legs/:id', async (req, res) => {
+    const id = req.params.id
+    const data = await getOneLeg(id)
+
+
+
+    res.status(200).json({ message: "Successfully opened details", data });  //isauthor
+
+})
+
+router.get('/legs/:legId/:matchId', async (req, res) => {
+    const legId = req.params.legId;
+    const matchId = req.params.matchId;
+
+    const data = await getOneMatch(legId, matchId);
+    res.status(200).json({ message: "Successfully opened details", data });  //isauthor
+
 })
 
 module.exports = router;

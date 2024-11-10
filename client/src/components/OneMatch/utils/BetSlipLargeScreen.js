@@ -12,7 +12,7 @@ const BetSlipLargeScreen = ({ selectedBets, removeBet, blockPlaceBet }) => {
             {selectedBets.length > 0 ? (
                 selectedBets.map(bet => (
                     <div key={bet.id} className={styles.selectedBet}>
-                        {bet.name} - <span className={styles.odds}>{bet.odds.toFixed(2)}</span>
+                        {bet.name} - <span className={styles.odds}>{bet.odds}</span>
                         <button onClick={() => removeBet(bet)}>X</button>
                     </div>
                 ))

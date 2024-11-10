@@ -1,103 +1,104 @@
 // src/components/RegisterForm/RegisterForm.js
 import styles from './Register.module.css';
 
-import { useRef, useState, useEffect, useContext } from 'react'
-import AuthContext from "../../../context/AuthProvider";
-import axios from 'axios'
-import { useNavigate, Link, useLocation } from "react-router-dom";
+// import { useRef, useState, useEffect, useContext } from 'react'
+// import AuthContext from "../../../context/AuthProvider";
+// import axios from 'axios'
+import {  Link } from "react-router-dom";
 
 const RegisterForm = () => {
-    const [title, setTitle] = useState('');
+    // const [title, setTitle] = useState('');
 
-    const handleTitleSelect = (selectedTitle) => {
-        setTitle(selectedTitle);
-    };
+    // const handleTitleSelect = (selectedTitle) => {
+    //     setTitle(selectedTitle);
+    // };
 
-    const { auth, setAuth } = useContext(AuthContext);
+    // const { auth, setAuth } = useContext(AuthContext);
 
-    const [firstName, setFirstName] = useState('')
-    const [lastName, setIsLastName] = useState('')
-    const [email, setEmail] = useState('')
-    const [password, setPassword] = useState('')
-    const [rePass, setRepass] = useState('')
+    // const [firstName, setFirstName] = useState('')
+    // const [lastName, setIsLastName] = useState('')
+    // const [email, setEmail] = useState('')
+    // const [password, setPassword] = useState('')
+    // const [rePass, setRepass] = useState('')
 
-    const [errorMessage, setErrorMessage] = useState('')
-    const [success, setSuccess] = useState('')
+    // const [errorMessage, setErrorMessage] = useState('')
+    // const [success, setSuccess] = useState('')
 
-    useEffect(() => {
-        setErrorMessage('')
-    }, [email, password, firstName, lastName, rePass])
+    // useEffect(() => {
+    //     setErrorMessage('')
+    // }, [email, password, firstName, lastName, rePass])
 
+    let title;
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log(email, password, firstName, lastName, rePass)
+    // const handleSubmit = (e) => {
+    //     e.preventDefault();
+    //     console.log(email, password, firstName, lastName, rePass)
 
-        try {
-            if (password === '' || rePass === '' || email === '') {
-                setErrorMessage("All fields are required")
-            }
+    //     try {
+    //         if (password === '' || rePass === '' || email === '') {
+    //             setErrorMessage("All fields are required")
+    //         }
 
-            if (password === rePass) {
-                fetch('http://localhost:3030/api/users/register', {
-                    method: 'POST',
-                    body: JSON.stringify({
-                        email,
-                        password,
-                        firstName,
-                        lastName, rePass
-                    }),
-                    headers: {
-                        'Content-type': 'application/json; charset=UTF-8',
-                    },
-                })
-                    .then((response) => response.json())
-                    .then((data) => {
-                        console.log(data)
-                        const emailData = data.user?.email
-                        const nameData = `${data.user?.firstName} ${data.user?.lastName}`
-                        const idData = data.user?._id
-                        const accessTokenData = data.token || ''
+    //         if (password === rePass) {
+    //             fetch('http://localhost:3030/api/users/register', {
+    //                 method: 'POST',
+    //                 body: JSON.stringify({
+    //                     email,
+    //                     password,
+    //                     firstName,
+    //                     lastName, rePass
+    //                 }),
+    //                 headers: {
+    //                     'Content-type': 'application/json; charset=UTF-8',
+    //                 },
+    //             })
+    //                 .then((response) => response.json())
+    //                 .then((data) => {
+    //                     console.log(data)
+    //                     const emailData = data.user?.email
+    //                     const nameData = `${data.user?.firstName} ${data.user?.lastName}`
+    //                     const idData = data.user?._id
+    //                     const accessTokenData = data.token || ''
 
-                        console.log(idData)
+    //                     console.log(idData)
 
-                        localStorage.setItem('email', emailData)
-                        localStorage.setItem('name', nameData)
-                        localStorage.setItem('accessToken', accessTokenData)
-                        localStorage.setItem('id', idData)
+    //                     localStorage.setItem('email', emailData)
+    //                     localStorage.setItem('name', nameData)
+    //                     localStorage.setItem('accessToken', accessTokenData)
+    //                     localStorage.setItem('id', idData)
 
-                        const email = localStorage.getItem('email')
-                        const name = localStorage.getItem('name')
-                        const id = localStorage.getItem('id')
-                        const accessToken = localStorage.getItem('accessToken')
+    //                     const email = localStorage.getItem('email')
+    //                     const name = localStorage.getItem('name')
+    //                     const id = localStorage.getItem('id')
+    //                     const accessToken = localStorage.getItem('accessToken')
 
-                        if (email && name && id && accessToken) {
-                            setAuth({
-                                email, name, id, accessToken
-                            })
+    //                     if (email && name && id && accessToken) {
+    //                         setAuth({
+    //                             email, name, id, accessToken
+    //                         })
 
-                        } else {
-                            setErrorMessage(data.message)
-                        }
-
-
-                    })
-                    .catch((err) => {
-                        setErrorMessage(err.message)
-                    });
-            } else {
-                setErrorMessage('Passwords must be equal')
-            }
+    //                     } else {
+    //                         setErrorMessage(data.message)
+    //                     }
 
 
-        } catch (err) {
-            console.log(err)
-        }
+    //                 })
+    //                 .catch((err) => {
+    //                     setErrorMessage(err.message)
+    //                 });
+    //         } else {
+    //             setErrorMessage('Passwords must be equal')
+    //         }
 
 
-        setPassword('')
-        setSuccess(true)
-    }
+    //     } catch (err) {
+    //         console.log(err)
+    //     }
+
+
+    //     setPassword('')
+    //     setSuccess(true)
+    // }
 
     return (
         <div className={styles.registerContainer}>
@@ -136,14 +137,14 @@ const RegisterForm = () => {
                     <button
                         type="button"
                         className={`${styles.titleButton} ${title === 'Ms' ? styles.selected : ''}`}
-                        onClick={() => handleTitleSelect('Ms')}
+                        // onClick={() => handleTitleSelect('Ms')}
                     >
                         Ms
                     </button>
                     <button
                         type="button"
                         className={`${styles.titleButton} ${title === 'Mr' ? styles.selected : ''}`}
-                        onClick={() => handleTitleSelect('Mr')}
+                        // onClick={() => handleTitleSelect('Mr')}
                     >
                         Mr
                     </button>
@@ -161,7 +162,9 @@ const RegisterForm = () => {
                 <label htmlFor="repeat-password" className={styles.label}>Repeat Password</label>
                 <input type="password" id="repeat-password" name="repeat-password" className={styles.input} required />
 
-                <button type="submit" className={styles.button} onClick={handleSubmit}>Register</button>
+                <button type="submit" className={styles.button} 
+                // onClick={handleSubmit}
+                >Register</button>
             </form>
             <p className={styles.linkText}>
                 Already have an account? <Link to="/login" className={styles.link}>Login</Link>

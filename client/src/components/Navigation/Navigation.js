@@ -24,7 +24,7 @@ const Navigation = () => {
           </div>
         </div>
         <nav className={styles['nav-bottom']}>
-          <Link to="/AllMatches" className={`${styles['nav-link']} ${styles.active}`}>
+          <Link to="/AllMatches/672fa9bba2877c22ee25ffc0" className={`${styles['nav-link']} ${styles.active}`}>
             Matches
           </Link>
           <Link to="/MyBets" className={styles['nav-link']}>

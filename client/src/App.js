@@ -27,10 +27,10 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/Home' element={<Home />} />
           <Route path='/Login' element={<Login />} />
-          <Route path='/AllMatches' element={<AllMatches />} />
+          <Route path='/AllMatches/:id' element={<AllMatches />} />
           <Route path='/Leagues' element={<Leagues />} />
           <Route path='/MyBets' element={<MyBets />} />
-          <Route path='/OneMatch' element={<OneMatch />} />
+          <Route path='/OneMatch/:legId/:matchId' element={<OneMatch />} />
           <Route path='/Register' element={<Register />} />
           <Route path='/Standings' element={<Standings />} />
           <Route path='/Profile' element={<Profile />} />
